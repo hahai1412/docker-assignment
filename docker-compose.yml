@@ -1,0 +1,13 @@
+# Assignment: Writing a Compose File
+# Goal: Create a compose config for a local SF Food Trucks website
+# - This empty directory is where you should create a docker-compose.yml
+# - Use the built image along with the `docker.elastic.co/elasticsearch/elasticsearch:6.3.2` image
+# - Set the version to 3
+# - Use `ports` to expose the flask on 5000
+# - Be sure to setup discovery.type=single-node on elasticsearch image
+# - Use `ports` to expose the flask on 9200 and 9300
+# - Walk though the flask config in browser at http://localhost:8080
+
+# - Extra Credit: Use volumes to store Drupal unique data
+#     + Create volume esdata1 mount to /usr/share/elasticsearch/data use for elasticsearch
+#     + Bindmount flask-app to /opt/flask-app
